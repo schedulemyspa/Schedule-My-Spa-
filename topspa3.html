@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Your Store</title>
+<meta property="og:image" content="images/product_180x180.jpg.jpg" />
+<meta name="description" content="My Store" />
+
+<link rel="stylesheet" type="text/css" href="stylesheet/960.css" media="all" />
+<link rel="stylesheet" type="text/css" href="stylesheet/screen.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheet/color.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheet/prettyPhoto.css" media="all" />
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="stylesheet/ie.css" media="screen" />
+<![endif]-->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/shoppica.js"></script>
+
+<!-- Start Google Analytics -->
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39328800-3', 'schedulemyspa.com');
+  ga('send', 'pageview');
+
+</script>
+<!-- end Google Analytics -->
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+  $(".s_tabs").tabs({ fx: { opacity: 'toggle', duration: 300 } });
+
+  $("#product_images a[rel^='prettyPhoto'], #product_gallery a[rel^='prettyPhoto']").prettyPhoto({
+    theme: 'light_square',
+    opacity: 0.5
+  });
+
+  $("#bookmassage_click").click(function(){
+    mixpanel.track("bookmassage_click");
+    alert('Sorry, our system is down. No appointments are available at this time.');
+  });
+
+});
+
+</script>
+
+<!-- start Mixpanel -->
+<script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+mixpanel.init("58ee30ea72110e42c18839ea9b347fbd");</script>
+<!-- end Mixpanel -->
+</head>
+
+<body class="s_layout_fixed">
+
+<div id="wrapper"> 
+  <!-- ********************** --> 
+  <!--      H E A D E R       --> 
+  <!-- ********************** --> 
+  <div id="header" class="container_12">
+    <div class="grid_12">
+    
+      <a id="site_logo" href="index.html">Schedule My Spa</a> 
+
+      <div id="system_navigation" class="s_nav">
+        <ul class="s_list_1 clearfix">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="topmassages.html">Top Massages</a></li>
+          <li><a href="contacts.html">About Us</a></li>
+          <li>
+            <span class="s_icon"></span>
+            <small class="s_text">Cart </small>
+            <span class="s_grand_total s_main_color">$0.00 </span>
+            <div class="s_submenu s_cart_holder">
+              <p class="s_mb_0">0 items</p>
+            </div>
+          </li>
+        </ul>
+      </div>     
+    </div>
+  </div>
+  <!-- end of header --> 
+
+  <!-- ********************** --> 
+  <!--     I N T R O          -->
+  <!-- ********************** --> 
+
+  <div id="intro">
+    <div id="intro_wrap">
+      <div class="container_12">
+        <div id="breadcrumbs" class="grid_12">
+          <a href="">Home</a>
+          &gt;
+          <a href="">Top Massages</a>
+          &gt;
+          <a href="">Massage Details</a>
+        </div>
+        <h1>Hotel Bel-Air Spa</h1>
+      </div>
+    </div>
+  </div>
+  <!-- end of intro -->
+  
+  
+  <!-- ********************** --> 
+  <!--      C O N T E N T     -->
+  <!-- ********************** --> 
+  <div id="content" class="product_view container_12">
+
+    <div id="product" class="grid_12">
+      <div id="product_images" class="grid_4 alpha">
+      	<a id="product_image_preview" rel="prettyPhoto[gallery]" href="spaimages/topspa3_01.jpg"><img id="image" style="width: 300px;" src="spaimages/topspa3_01.jpg" title="topspa3" alt="topspa3" /></a>
+      </div>
+      <div id="product_info" class="grid_4">
+        <p class="s_price ">$120.00</p>
+        <dl class="clearfix">
+          <dt>Spa Name</dt>
+          <dd><a href="#">Hotel Bel-Air Spa</a></dd>
+          <dt>Address</dt>
+          <dd>701 Stone Canyon Rd, Los Angeles, CA 90077</dd>
+          <dt>Type</dt>
+          <dd>Swedish, Deep Tissue</dd>
+          <dt>Massage Duration</dt>
+          <dd>60 minutes</dd>
+          <dt>Average Rating</dt>
+          <dd>
+            <p class="s_rating s_rating_5"><span style="width: 100%;" class="s_percent"></span></p>
+          </dd>
+        </dl>
+      	<p class="s_short_desc">Schedule My Spa!
+Massage therapy appointments - Prepaid. Instant. Confirmed. We are the largest spa appointment booking system with hundreds of appointments available every week. </p>
+        <div id="product_share" class="clearfix">
+          <!-- AddThis Button BEGIN -->
+          <div class="addthis_toolbox addthis_default_style ">
+          <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+          <a class="addthis_button_tweet"></a>
+          <a class="addthis_counter addthis_pill_style"></a>
+          </div>
+          <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4de0eff004042e7a"></script>
+          <!-- AddThis Button END -->
+        </div>
+      </div>
+      <div class="grid_4 omega">
+      	<div class="suffix_2 left s_999">
+        	<p>Including 20% Tip</p>
+          <p class="s_f_11"><strong>Free refund</strong> only if appointment is cancelled within 24 hours. No charge for rescheduling.</p>
+        </div>
+        <div id="product_options">
+          <h3>Available Options</h3>
+          <label for="option_Memory">Tomorrow</label>
+          <select id="option_Memory">
+            <option value="">9:00am for 60 min massage</option>
+            <option value="">12:30pm for 60 min massage</option>
+            <option value="">2:00pm for 60 min massage</option>
+            <option value="">4:00pm for 60 min massage</option>
+          </select>
+          <span class="clear"></span>
+        </div>
+        <div id="product_buy" class="clearfix">
+         
+          <a id="add_to_cart" class="s_main_color_bgr">
+            <span class="s_text" id="bookmassage_click">
+              <span class="s_icon"></span> Book Massage
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="s_tabs grid_12 alpha omega">
+        <ul class="s_tabs_nav clearfix">
+          <li><a href="#product_reviews">Reviews (1)</a></li>
+          <li><a href="#product_gallery">Photos (4)</a></li>
+        </ul>
+        <div class="s_tab_box">
+
+          <div id="product_reviews" class="s_listing">
+            <div class="s_review last">
+              <p class="s_author"><strong>Lana O.</strong><small>(12/29/2013)</small></p>
+              <div class="right">
+                <div class="s_rating_holder">
+                  <p class="s_rating s_rating_5"><span class="s_percent" style="width: 100%;"></span></p>
+                  <span class="s_average">5 out of 5 Stars!</span>
+                </div>
+              </div>
+              <div class="clear"></div>
+              <p>Wow I hadn't been here before so I was really taken aback that I didn't know about this new-ish spa yet! AMAZING facility! It's just beautiful and very state of the art. 
+              <br><br>
+              I got an outstanding 90 minute massage from Carol.The desk staff were super gracious and lovely. They validate valet parking FYI. 
+              <br><br>
+              Will be back!! Thank you!!
+              </p>
+            </div>
+            
+         
+            <div class="pagination"><div class="results">Showing 1 to 1 of 1 (1 Pages)</div></div>
+            <h2 class="s_title_1"><span class="s_main_color">Write</span> Review</h2>
+            <div id="review_title" class="clear"></div>
+            <div class="s_row_3 clearfix">
+              <label><strong>Your Name:</strong></label>
+              <input type="text" />
+            </div>
+            <div class="s_row_3 clearfix">
+              <label><strong>Your Review:</strong></label>
+              <textarea style="width: 98%;" rows="8" cols="50"></textarea>
+              <p class="s_legend"><span style="color: #FF0000;">Note:</span> HTML is not translated!</p>
+            </div>
+            <div class="s_row_3 clearfix">
+              <label><strong>Rating</strong></label>
+              <span class="clear"></span> <span>Bad</span>&nbsp;
+              <input type="radio" />
+              &nbsp;
+              <input type="radio" />
+              &nbsp;
+              <input type="radio" />
+              &nbsp;
+              <input type="radio" />
+              &nbsp;
+              <input type="radio" />
+              &nbsp; <span>Good</span>
+            </div>
+            <span class="clear border_ddd"></span>
+            <a class="s_button_1 s_main_color_bgr"><span class="s_text">Continue</span></a> <span class="clear"></span>
+          </div>
+         
+          <div id="product_gallery">
+            <ul class="s_thumbs clearfix">
+              <li><a class="s_thumb" href="spaimages/topspa3_01.jpg" title="topspa3" rel="prettyPhoto[gallery]"><img src="spaimages/topspa3_01.jpg" width="120" title="topspa3" alt="topspa3_01" /></a></li>
+             
+              <li><a class="s_thumb" href="spaimages/topspa3_02.jpg" title="topspa3" rel="prettyPhoto[gallery]"><img src="spaimages/topspa3_02.jpg" width="120" title="topspa3_02" alt="topspa3_02" /></a></li>
+
+              <li><a class="s_thumb" href="spaimages/topspa3_03.jpg" title="topspa3" rel="prettyPhoto[gallery]"><img src="spaimages/topspa3_03.jpg" width="120" title="topspa3_03" alt="topspa3_03" /></a></li>
+
+              <li><a class="s_thumb" href="spaimages/topspa3_04.jpg" title="topspa3" rel="prettyPhoto[gallery]"><img src="spaimages/topspa3_04.jpg" width="120" title="topspa3_04" alt="topspa3_04" /></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+        
+      <div id="product_tags" class="grid_12 alpha omega">
+        <h2 class="s_title_1"><span class="s_main_color">Product</span> Tags</h2>
+        <div class="clear"></div>
+        <ul class="clearfix">
+          <li><a href="#">Deep Tissue Massage</a></li>
+          <li><a href="#">Swedish Massage</a></li>
+          <li><a href="#">1 hour</a></li>
+        </ul>
+      </div>
+      
+    </div>
+
+  </div>
+  <!-- end of content -->
+  
+  <!-- ********************** --> 
+  <!--   S H O P   I N F O    --> 
+  <!-- ********************** --> 
+  <div id="shop_info">
+    <div id="shop_info_wrap">
+      <div class="container_12">
+        <div id="shop_description" class="grid_3">
+          <h2>Schedule My Spa!</h2>
+          <p>Massage therapy appointments - Prepaid. Instant. Confirmed. </p>
+          <p>We are the largest spa appointment booking system with hundreds of appointments available every week. You now have the luxury to book last minute and find spas near you all in one place. </p>
+        </div>
+        <div id="shop_contacts" class="grid_3">
+          <h2>Contact Us</h2>
+          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td valign="middle"><span class="s_icon_32"><span class="s_icon s_mail_32"></span>info@schedulemyspa.com <br /> Jessie@schedulemyspa.com</span></td>
+            </tr>
+            <tr>
+              <td valign="middle"><span class="s_icon_32"><span class="s_icon s_skype_32"></span>ScheduleMySpa <br /> </span></td>
+            </tr>
+          </table>
+        </div>
+        <div id="twitter" class="grid_3">
+          <h2>Twitter</h2>
+          <ul id="twitter_update_list"><li></li></ul>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <!-- end of shop info --> 
+  
+  
+  
+  <!-- ********************** --> 
+  <!--      F O O T E R       --> 
+  <!-- ********************** --> 
+  <div id="footer" class="container_12">
+    <div id="payments" class="right clearfix">
+      <img src="images/payments/discover_straight_32px.png" alt="" />
+      <img src="images/payments/american_express_straight_32px.png" alt="" />
+      <img src="images/payments/moneybookers_straight_32px.png" alt="" />
+      <img src="images/payments/paypal_straight_32px.png" alt="" />
+      <img src="images/payments/visa_straight_32px.png" alt="" />
+      <img src="images/payments/american_express_straight_32px.png" alt="" />
+    </div>
+    <p id="copy">Schedule My Spa &copy; Copyright 2014. Powered by <a class="blue" href="">Open Cart</a>.</p>
+  </div>
+  <!-- end of FOOTER --> 
+  
+</div>
+
+</body>
+<script type="text/javascript">
+mixpanel.track('topspa3_page');
+</script>
+</html>

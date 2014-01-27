@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Your Store</title>
+<meta name="description" content="My Store" />
+<link rel="stylesheet" type="text/css" href="stylesheet/960.css" media="all" />
+<link rel="stylesheet" type="text/css" href="stylesheet/screen.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheet/color.css" media="screen" />
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="stylesheet/ie.css" media="screen" />
+<![endif]-->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.8/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/shoppica.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+														
+	jQuery.validator.setDefaults({
+			errorElement: "p",
+			errorClass: "s_error_msg",
+			errorPlacement: function(error, element) {
+					error.insertAfter(element);
+			},
+			highlight: function(element, errorClass, validClass) {
+					$(element).addClass("error_element").removeClass(validClass);
+					$(element).parent("div").addClass("s_error_row");
+			},
+			unhighlight: function(element, errorClass, validClass) {
+					$(element).removeClass("error_element").addClass(validClass);
+					$(element).parent("div").removeClass("s_error_row");
+			}
+	});
+	$("#contact_form").validate({
+		rules: {
+			enquiry: {
+					required: true,
+					minlength: 10
+			}
+		}
+	});
+	
+});
+</script>
+<!-- Start Google Analytics -->
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39328800-3', 'schedulemyspa.com');
+  ga('send', 'pageview');
+
+</script>
+<!-- end Google Analytics -->
+
+
+<!-- start Mixpanel -->
+<script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+mixpanel.init("58ee30ea72110e42c18839ea9b347fbd");</script>
+<!-- end Mixpanel -->
+
+</head>
+
+<body class="s_layout_fixed">
+
+<div id="wrapper"> 
+
+ 
+<div id="wrapper"> 
+  <!-- ********************** --> 
+  <!--      H E A D E R       --> 
+  <!-- ********************** --> 
+  <div id="header" class="container_12">
+    <div class="grid_12">
+    
+      <a id="site_logo" href="index.html">Schedule My Spa</a> 
+
+      <div id="system_navigation" class="s_nav">
+        <ul class="s_list_1 clearfix">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="topmassages.html">Top Massages</a></li>
+          <li><a href="contacts.html">About Us</a></li>
+          <li>
+            <span class="s_icon"></span>
+            <small class="s_text">Cart </small>
+            <span class="s_grand_total s_main_color">$0.00 </span>
+            <div class="s_submenu s_cart_holder">
+              <p class="s_mb_0">0 items</p>
+            </div>
+          </li>
+        </ul>
+      </div>     
+    </div>
+  </div>
+  <!-- end of header --> 
+  
+
+  <!-- ********************** --> 
+  <!--     I N T R O          -->
+  <!-- ********************** --> 
+
+  <div id="intro">
+    <div id="intro_wrap">
+      <div class="container_12">
+        <div id="breadcrumbs" class="grid_12">
+          <a href="">Home</a>
+          &gt;
+          <a href="">About Us</a>
+        </div>
+        <h1>About Us</h1>
+      </div>
+    </div>
+  </div>
+  <!-- end of intro -->
+
+  
+  <!-- ********************** --> 
+  <!--      C O N T E N T     -->
+  <!-- ********************** --> 
+  <div id="content" class="container_16">
+
+
+    
+    <div id="contacts" class="s_info_page grid_12">
+     	
+      <h2>Our<span class="s_secondary_color"> Story</span></h2>
+      <p>Birthday … Sunday Funday … Stress relief … Injury treatment ... Our mobile app and website help find a massage booking for any need, any time.  Our management solutions for spas help them stay filled with happy customers.  We have been transforming massage reservations since 2012 and we’re more excited than ever about the services we are building for clients and spas.  We are dedicated to making it even easier to find the perfect spa - and experience soul nourishing healing and relaxation - anywhere in the world.</p>
+
+      <br />
+      <span class="clear border_ddd"></span>
+      <br />
+      
+      
+      <h2><span class="s_secondary_color">Send</span> a message</h2>
+
+      <form id="contact_form" action="#" method="post" enctype="multipart/form-data">
+      	<div id="contact_form_icon"></div>
+        
+        <div class="s_row_3 clearfix">
+          <label><strong>First Name:</strong> *</label>
+          <input type="text" size="40" class="required" title="Name must be between 3 and 32 characters!" />
+        </div>
+        <div class="s_row_3 clearfix">
+          <label><strong>E-Mail Address:</strong> *</label>
+          <input type="text" size="40" class="required email" title="E-Mail Address does not appear to be valid!" />
+        </div>
+        <div class="s_row_3 clearfix">
+          <label><strong>Enquiry:</strong> *</label>
+          <div class="s_full">
+            <textarea id="enquiry" style="width: 98%;" rows="10" class="required" title="Enquiry must be between 10 and 3000 characters!" cols="50"></textarea>
+          </div>
+        </div>
+        <a class="s_button_1 s_main_color_bgr" onclick="$('#contact_form').submit();"><span class="s_text">Send message</span></a>
+      </form>
+
+    </div>
+  </div>
+    
+    <div id="right_col" class="grid_3">
+  
+      <div id="bestseller_side" class="s_box clearfix">
+        <h2>Featured Bestsellers</h2>
+
+        <div class="s_item s_size_1 clearfix">
+          <a class="s_thumb" href="topspa1.html"><img src="spaimages/topspa1_01.jpg" width="45" height="45" alt="Spa" style="float: right;"/></a>
+          <span style="font-size: 30px; float: left; display: inline-block; height: 38px; padding-top: 8px; color: #7f7f7f;">#1</span><h3><a href="topspa1.html">Artisan Healing</a></h3>
+          <p><a href="topspa1.html"><span class="s_main_color">$90.00</span></a></p>
+        </div>
+
+        <div class="s_item s_size_1 clearfix">
+          <a class="s_thumb" href="topspa2.html"><img src="spaimages/topspa2_01.jpg" width="45" height="45" alt="Spa" style="float: right;"/></a>
+          <span style="font-size: 30px; float: left; display: inline-block; height: 38px; padding-top: 8px; color: #7f7f7f;">#2</span><h3><a href="topspa2.html">Spa Sophia</a></h3>
+          <p><a href="topspa2.html"><span class="s_main_color">$110.00</span></a></p>
+        </div>
+
+        <div class="s_item s_size_1 clearfix">
+          <a class="s_thumb" href="topspa3.html"><img src="spaimages/topspa3_01.jpg" width="45" height="45" alt="Spa" style="float: right;"/></a>
+          <span style="font-size: 30px; float: left; display: inline-block; height: 38px; padding-top: 8px; color: #7f7f7f;">#3</span><h3><a href="topspa3.html">Hotel Bel-Air Spa</a></h3>
+          <p><a href="topspa3.html"><span class="s_main_color">$120.00</span></a></p>
+        </div>
+
+      <div id="information_module" class="s_box">
+        <h2>Information</h2>
+        <ul class="s_list_1">
+          <li><a href="contacts.html">About Schedule My Spa!</a></li>
+        </ul>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="clear"></div>
+   
+  </div>
+  <!-- end of content -->
+
+  <!-- ********************** --> 
+  <!--   S H O P   I N F O    --> 
+  <!-- ********************** --> 
+  <div id="shop_info">
+    <div id="shop_info_wrap">
+      <div class="container_12">
+        <div id="shop_description" class="grid_3">
+          <h2>Schedule My Spa!</h2>
+          <p>Massage therapy appointments - Prepaid. Instant. Confirmed. </p>
+          <p>We are the largest spa appointment booking system with hundreds of appointments available every week. You now have the luxury to book last minute and find spas near you all in one place. </p>
+        </div>
+        <div id="shop_contacts" class="grid_3">
+          <h2>Contact Us</h2>
+          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td valign="middle"><span class="s_icon_32"><span class="s_icon s_mail_32"></span>info@schedulemyspa.com <br /> Jessie@schedulemyspa.com</span></td>
+            </tr>
+            <tr>
+              <td valign="middle"><span class="s_icon_32"><span class="s_icon s_skype_32"></span>ScheduleMySpa <br /> </span></td>
+            </tr>
+          </table>
+        </div>
+        <div id="twitter" class="grid_3">
+          <h2>Twitter</h2>
+          <ul id="twitter_update_list"><li></li></ul>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <!-- end of shop info --> 
+  
+  
+  
+  <!-- ********************** --> 
+  <!--      F O O T E R       --> 
+  <!-- ********************** --> 
+  <div id="footer" class="container_12">
+    <div id="payments" class="right clearfix">
+      <img src="images/payments/discover_straight_32px.png" alt="" />
+      <img src="images/payments/american_express_straight_32px.png" alt="" />
+      <img src="images/payments/moneybookers_straight_32px.png" alt="" />
+      <img src="images/payments/paypal_straight_32px.png" alt="" />
+      <img src="images/payments/visa_straight_32px.png" alt="" />
+      <img src="images/payments/american_express_straight_32px.png" alt="" />
+    </div>
+    <p id="copy">Schedule My Spa &copy; Copyright 2014. Powered by <a class="blue" href="">Open Cart</a>.</p>
+  </div>
+  <!-- end of FOOTER --> 
+  
+</div>
+
+</body>
+<script type="text/javascript">
+mixpanel.track('listing-page');
+</script>
+</html>
